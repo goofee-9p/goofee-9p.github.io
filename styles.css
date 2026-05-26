@@ -1,10 +1,11 @@
 :root {
-  --paper: #f7f7f5;
-  --ink: #111111;
-  --soft-ink: #4d4d4d;
-  --pale-ink: #8a8a8a;
-  --line: #171717;
-  --hairline: #d8d8d2;
+  --paper: #ffffff;
+  --ink: #000000;
+  --soft-ink: #444444;
+  --pale-ink: #8c8c8c;
+  --line: #000000;
+  --hairline: #d9d9d9;
+  --wash: #f2f2f2;
   --white: #ffffff;
 }
 
@@ -38,7 +39,7 @@ a {
   min-height: 68px;
   padding: 0 clamp(18px, 4vw, 56px);
   border-bottom: 1px solid var(--line);
-  background: rgba(247, 247, 245, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(10px);
 }
 
@@ -234,7 +235,7 @@ main {
 }
 
 .archive-grid a:hover {
-  background: var(--white);
+  background: var(--wash);
 }
 
 .archive-grid strong {
