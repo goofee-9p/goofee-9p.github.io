@@ -271,6 +271,14 @@ main {
   line-height: 1.25;
 }
 
+.note-item h3 a {
+  border-bottom: 1px solid transparent;
+}
+
+.note-item h3 a:hover {
+  border-color: var(--line);
+}
+
 .note-item p,
 .contact-section p {
   max-width: 720px;
@@ -359,6 +367,107 @@ main {
   color: var(--soft-ink);
   font-size: 13px;
   font-weight: 600;
+}
+
+.post-main {
+  background: var(--paper);
+}
+
+.post-article {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: clamp(52px, 9vw, 112px) clamp(20px, 5vw, 72px);
+}
+
+.post-header {
+  display: grid;
+  gap: 18px;
+  padding-bottom: clamp(38px, 6vw, 68px);
+  border-bottom: 1px solid var(--line);
+}
+
+.back-link,
+.post-kicker,
+.thought-label,
+.post-header time {
+  color: var(--pale-ink);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.back-link {
+  width: fit-content;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.post-kicker,
+.post-header time {
+  margin: 0;
+}
+
+.post-header h1 {
+  margin: 0;
+  font-family: "Noto Sans KR", system-ui, sans-serif;
+  font-size: clamp(42px, 7vw, 88px);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.post-summary {
+  max-width: 680px;
+  margin: 0;
+  color: var(--soft-ink);
+  font-family: "Noto Sans KR", system-ui, sans-serif;
+  font-size: clamp(18px, 2.2vw, 24px);
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.post-body {
+  padding-top: clamp(34px, 6vw, 70px);
+  font-family: "Noto Sans KR", system-ui, sans-serif;
+  font-size: clamp(17px, 1.8vw, 20px);
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+.post-body blockquote {
+  margin: 0 0 clamp(34px, 5vw, 56px);
+  padding: clamp(20px, 4vw, 32px);
+  border: 1px solid var(--line);
+}
+
+.post-body blockquote p {
+  margin: 0;
+}
+
+.post-body blockquote p + p {
+  margin-top: 14px;
+}
+
+.post-body p {
+  margin: 0 0 22px;
+}
+
+.thought-label {
+  margin-bottom: 22px;
+}
+
+.post-body .emphasis {
+  margin: 34px 0;
+  padding-left: 22px;
+  border-left: 2px solid var(--line);
+  font-weight: 700;
+}
+
+.post-body ul {
+  margin: 0 0 28px;
+  padding-left: 22px;
+}
+
+.post-body li + li {
+  margin-top: 8px;
 }
 
 @media (max-width: 1024px) {
