@@ -29,12 +29,32 @@
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <p class="eyebrow">AI thought log</p>
-        <h1 id="hero-title">Thoughts about AI.</h1>
-        <p class="hero-copy">
-          인공지능을 공부하고 사용하면서 떠오른 생각을 기록합니다. 정답보다
-          질문을, 빠른 결론보다 오래 남는 관찰을 모아두는 공간입니다.
-        </p>
+        <div class="hero-meta">
+          <p class="eyebrow">AI thought log</p>
+          <p class="issue">Vol. 01</p>
+        </div>
+        <div class="hero-body">
+          <div>
+            <h1 id="hero-title">Thoughts about AI.</h1>
+            <a class="read-link" href="#notes">최근 기록 읽기</a>
+          </div>
+          <div class="hero-copy">
+            <p>
+              인공지능을 공부하고 사용하면서 떠오른 생각을 기록합니다. 정답보다
+              질문을, 빠른 결론보다 오래 남는 관찰을 모아두는 공간입니다.
+            </p>
+            <dl class="site-index" aria-label="사이트 구성">
+              <div>
+                <dt>Notes</dt>
+                <dd>긴 생각과 짧은 관찰</dd>
+              </div>
+              <div>
+                <dt>Questions</dt>
+                <dd>계속 붙잡고 싶은 질문</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
       </section>
 
       <section class="manifesto" aria-label="사이트 소개">
@@ -52,7 +72,7 @@
         </div>
 
         <div class="note-list">
-          <article class="note-item">
+          <article class="note-item" id="note-thinking">
             <time datetime="2026-05-26">2026.05.26</time>
             <div>
               <h3>AI는 생각을 대신하는가, 생각을 드러내는가</h3>
@@ -63,7 +83,7 @@
             </div>
           </article>
 
-          <article class="note-item">
+          <article class="note-item" id="note-automation">
             <time datetime="2026-05-26">2026.05.26</time>
             <div>
               <h3>자동화 이후에도 남는 감각</h3>
@@ -74,7 +94,7 @@
             </div>
           </article>
 
-          <article class="note-item">
+          <article class="note-item" id="note-slow">
             <time datetime="2026-05-26">2026.05.26</time>
             <div>
               <h3>느린 기록의 필요</h3>
