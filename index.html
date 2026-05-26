@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="생각, 질문, 글을 조용히 기록하는 개인 웹사이트입니다."
-    />
+    <meta name="description" content="생각, 질문, 글을 조용히 기록하는 개인 웹사이트입니다." />
     <title>goofee-9p | Thoughts about World</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,81 +14,61 @@
     <link rel="stylesheet" href="monochrome.css" />
   </head>
   <body>
-    <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="맨 위로 이동">goofee-9p</a>
+    <header class="site-header">
+      <a class="brand" href="index.html">goofee-9p</a>
       <nav class="site-nav" aria-label="주요 메뉴">
-        <a href="#about">About</a>
-        <a href="#questions">Questions</a>
-        <a href="#contents">Contents</a>
-        <a href="#contact">Contact</a>
+        <a href="pages/contents.html">Contents</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/questions.html">Questions</a>
+        <a href="pages/contact.html">Contact</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <p class="eyebrow">Personal notes</p>
+    <main class="home-main">
+      <section class="home-hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Personal journal</p>
         <h1 id="hero-title">Thoughts about World.</h1>
         <p>
-          어떤 기술, 장면, 문장, 질문이 오래 마음에 남을 때 이곳에 적어둡니다.
-          정리된 결론보다 아직 움직이고 있는 생각에 가깝습니다.
+          기술, 창작, 일, 관계, 일상에서 오래 남는 생각을 적어둡니다.
+          완성된 답보다 아직 움직이는 질문에 가까운 기록입니다.
         </p>
       </section>
 
-      <section class="plain-section" id="about" aria-labelledby="about-title">
-        <p class="section-number">01</p>
-        <div>
-          <h2 id="about-title">About</h2>
-          <p>
-            저는 goofee-9p입니다. AI, 창작, 일하는 방식, 그리고 일상에서
-            떠오르는 질문들을 천천히 기록합니다. 이곳은 보여주기 위한
-            포트폴리오보다, 생각이 지나간 흔적을 남기는 작은 공간입니다.
-          </p>
-        </div>
-      </section>
-
-      <section class="plain-section" id="questions" aria-labelledby="questions-title">
-        <p class="section-number">02</p>
-        <div>
-          <h2 id="questions-title">Questions</h2>
-          <p>
-            가끔 떠오르는 질문들을 모아둡니다. 답변은 제가 미리 달아두지
-            않습니다. 읽는 사람이 각자의 생각을 남길 수 있는 빈칸으로 두고
-            싶습니다.
-          </p>
-        </div>
-      </section>
-
-      <section class="plain-section" id="contents" aria-labelledby="contents-title">
-        <p class="section-number">03</p>
-        <div>
-          <h2 id="contents-title">Contents</h2>
-          <div class="content-list">
-            <article>
-              <time datetime="2026-05-26">2026.05.26</time>
-              <h3>
-                <a href="posts/prompt-agent-thinking.html">방법은 사라지고 목표가 남을 때</a>
-              </h3>
-              <p>
-                프롬프트, 에이전트, 하네스 엔지니어링을 지나 결국 남는 것은
-                무엇을 원하는지 정의하는 능력이라는 생각.
-              </p>
-            </article>
+      <section class="home-directory" aria-label="사이트 바로가기">
+        <a class="directory-item featured" href="pages/contents.html">
+          <span>01</span>
+          <div>
+            <h2>Contents</h2>
+            <p>내가 쓰는 게시물. 가장 최근 글부터 천천히 쌓입니다.</p>
           </div>
-        </div>
-      </section>
-
-      <section class="plain-section contact" id="contact" aria-labelledby="contact-title">
-        <p class="section-number">04</p>
-        <div>
-          <h2 id="contact-title">Contact</h2>
-          <a href="mailto:goofee.9p@gmail.com">goofee.9p@gmail.com</a>
-        </div>
+        </a>
+        <a class="directory-item" href="pages/about.html">
+          <span>02</span>
+          <div>
+            <h2>About</h2>
+            <p>나에 대해 아주 간단히 적어둔 곳.</p>
+          </div>
+        </a>
+        <a class="directory-item" href="pages/questions.html">
+          <span>03</span>
+          <div>
+            <h2>Questions</h2>
+            <p>가끔 떠오르는 질문들. 답은 열어둡니다.</p>
+          </div>
+        </a>
+        <a class="directory-item" href="pages/contact.html">
+          <span>04</span>
+          <div>
+            <h2>Contact</h2>
+            <p>연락이 필요할 때.</p>
+          </div>
+        </a>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>© 2026 goofee-9p</span>
-      <a href="#top">Back to top</a>
+      <a href="mailto:goofee.9p@gmail.com">goofee.9p@gmail.com</a>
     </footer>
   </body>
 </html>
