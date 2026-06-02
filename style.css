@@ -944,9 +944,6 @@ img {
     gap: 16px;
     align-items: flex-start;
   }
-  .lede .standfirst {
-    margin-left: 0;
-  }
   .about-strip {
     grid-template-columns: 1fr;
   }
