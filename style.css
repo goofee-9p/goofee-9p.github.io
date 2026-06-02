@@ -189,7 +189,6 @@ img {
   width: var(--shell);
   margin: 0 auto;
   padding: clamp(64px, 11vw, 132px) 0 clamp(44px, 7vw, 78px);
-  max-width: 960px;
 }
 .lede .eyebrow {
   display: block;

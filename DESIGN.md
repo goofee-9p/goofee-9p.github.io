@@ -1,7 +1,7 @@
 ---
 version: alpha
-name: goofee-9p — Letters
-description: A personal letter & portfolio space. Editorial, serif, generous whitespace, warm monochrome with a single restrained terracotta accent.
+name: goofee-9p — Contents
+description: A personal writing & portfolio space. Editorial, serif, generous whitespace, warm monochrome with a single restrained terracotta accent. Plain and understated, never sentimental.
 colors:
   paper: "#FBFAF8"
   paper-raised: "#F4F1EA"
@@ -77,7 +77,7 @@ components:
     textColor: "{colors.accent}"
   link-hover:
     textColor: "{colors.accent-deep}"
-  letter-number:
+  entry-number:
     textColor: "{colors.accent}"
     typography: "{typography.label}"
   rule-accent:
@@ -88,21 +88,22 @@ components:
     backgroundColor: "{colors.paper-raised}"
 ---
 
-# goofee-9p — Letters
+# goofee-9p — Contents
 
-A personal space that is one part **letter** (a quiet, recurring dispatch of thinking)
-and one part **portfolio**. The design exists to make long-form Korean writing feel
-considered and human, and to let selected work stand without noise.
+A personal space that is one part **writing** (Contents) and one part **portfolio**
+(Work). The design exists to make long-form Korean writing feel considered, and to let
+selected work stand without noise.
 
 ## Overview
 
 Also known as Brand & Style.
 
-The voice is that of a **personal letter**: unhurried, literary, sincere. Pages should
-feel like good paper — warm, calm, and confident with empty space. Nothing shouts. The
+The voice is **plain, understated, and confident — never sentimental.** Copy stays factual
+and dry; the warmth comes from the typography and paper, not from flowery wording. Pages
+should feel like good paper — calm and confident with empty space. Nothing shouts. The
 visual identity is **warm monochrome**: a near-white warm paper and a warm near-black ink,
 carried almost entirely by typography and hairlines. A single **restrained terracotta
-accent** appears rarely — on a letter's number, a link, a short rule — to add a trace of
+accent** appears rarely — on an entry's number, a link, a short rule — to add a trace of
 human warmth, never decoration. If a rule isn't defined, choose the quieter, more
 spacious option.
 
@@ -119,7 +120,7 @@ Warm neutrals do the work; the accent is a guest, not a host.
 - **Ink Quiet (#8E897F):** Labels, metadata, timestamps.
 - **Line (#E5E0D6):** The default warm hairline that structures the page.
 - **Accent — Terracotta (#B5512E):** The single accent. A refined, muted clay used only
-  for letter numbers, links, and short marker rules. **Restraint is the rule:** at most a
+  for entry numbers, links, and short marker rules. **Restraint is the rule:** at most a
   few accent marks per screen.
 - **Accent Deep (#8F3F22):** Hover/active state of the accent.
 
@@ -129,8 +130,8 @@ The system pairs a literary serif for everything readable with a quiet grotesque
 small labels — the classic editorial contrast.
 
 - **Serif — Newsreader + Noto Serif KR:** Display, titles, headlines, deks, and body. The
-  serif carries the letter's voice. Deks (summaries) are set in *italic* serif.
-- **Sans — Inter:** Eyebrows, navigation, letter numbers, and metadata only. Always
+  serif carries the writing's voice. Deks (summaries) are set in *italic* serif.
+- **Sans — Inter:** Eyebrows, navigation, entry numbers, and metadata only. Always
   UPPERCASE with generous letter-spacing, small and quiet.
 - Body runs at a comfortable 18px with 1.85 line-height and a ~680px measure for long
   Korean reading. Display and title sizes are fluid (`clamp`) and the px values above are
@@ -144,7 +145,7 @@ A single, calm reading column.
 - **Shell (max 1120px):** Masthead, footer, and wide index lists.
 - **Measure (max 680px):** All long-form reading and prose.
 - A strict **8px spacing scale** sets the rhythm; sections breathe with `xl`–`xxl`
-  vertical space. The home is **letter-first**: the latest letter is the largest object on
+  vertical space. The home is **content-first**: the latest entry is the largest object on
   the page, the archive follows, and About / Work sit quietly beneath.
 
 ## Elevation & Depth
@@ -163,20 +164,21 @@ is a **short 2px terracotta rule** (~32px wide) used to open a section.
 
 - **Links:** Inline serif links carry a 1px underline; color shifts to terracotta on
   hover. Standalone "read" links use a trailing arrow (→).
-- **Letter number:** A small uppercase sans label (`LETTER 003`) in terracotta, paired
-  with a serif title.
-- **Letter row (archive/index):** A hairline-separated row — number, serif title, date,
-  one-line dek. Hover lifts the title to ink and warms the background to `paper-raised`.
+- **Entry number:** A small uppercase sans label (`No. 003`) in terracotta, paired with a
+  serif title. (Do not label entries "letters"; use plain numbers / "Contents".)
+- **Index row (archive):** A hairline-separated row — number, serif title, date, one-line
+  summary. Hover lifts the title to ink and warms the background to `paper-raised`.
 - **Eyebrow + accent rule:** Section openers use an uppercase sans eyebrow above a short
   terracotta rule.
-- **Pull emphasis:** Key sentences in a letter sit behind a 2px terracotta left border.
+- **Pull emphasis:** Key sentences in an entry sit behind a 2px terracotta left border.
 
 ## Do's and Don'ts
 
 - Do let whitespace carry the page; when unsure, add space, not lines.
-- Do keep the accent rare — a letter number, a link, one rule per section is plenty.
+- Do keep the accent rare — an entry number, a link, one rule per section is plenty.
 - Don't introduce a second accent color or any shadow.
-- Don't set Korean body in sans; the serif is the voice of the letter.
+- Don't set Korean body in sans; the serif is the voice of the writing.
+- Don't write sentimental or flowery copy; keep wording plain, factual, and dry.
 - Do maintain WCAG AA contrast (terracotta on paper passes for text; pair it with ink for
   anything small).
 - Don't mix sharp and rounded corners in the same view.
