@@ -1,5 +1,17 @@
 # goofee-9p — Letters
 
+> ## ✋ 먼저 읽어주세요 — Read me first
+>
+> **이 저장소에 글을 쓰거나(레터·작업 추가) 디자인·스타일을 바꾸기 전에, 반드시
+> [`DESIGN.md`](DESIGN.md)를 먼저 읽어 주세요.** 색·타이포·간격·컴포넌트 등 모든 시각
+> 결정의 단일 기준(source of truth)입니다. `style.css`는 그 토큰을 그대로 구현할 뿐이므로,
+> 무언가를 바꾸려면 **DESIGN.md에서 먼저 정하고** `style.css`의 `:root`에 반영하세요.
+>
+> - 📄 **[DESIGN.md](DESIGN.md)** — 이 사이트의 디자인 토큰 + 근거 (꼭 먼저 볼 것)
+> - 📚 **[docs/design-md-spec.md](docs/design-md-spec.md)** — DESIGN.md 포맷을 읽고 쓰는 법
+>   (Google Labs 원본 스펙). 다른 프로젝트에 이 방식을 쓸 때도 여기서 꺼내 쓰면 됩니다.
+> - 🤖 AI 에이전트(Claude Code 등)는 [`CLAUDE.md`](CLAUDE.md)에 같은 지침이 있습니다.
+
 개인 레터이자 포트폴리오 공간. GitHub Pages로 배포되는 정적 사이트입니다.
 오래 남는 생각을 편지(Letter)처럼 적어 모으고, 선별한 작업(Work)을 함께 둡니다.
 
