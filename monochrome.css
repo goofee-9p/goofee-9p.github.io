@@ -40,7 +40,7 @@ main {
 }
 
 .site-header {
-  min-height: 76px;
+  min-height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -234,54 +234,81 @@ main {
 }
 
 .post-main {
-  max-width: 860px;
+  max-width: 960px;
 }
 
 .post-article {
-  padding: clamp(52px, 9vw, 112px) 0;
+  padding: clamp(36px, 6vw, 72px) 0 clamp(60px, 9vw, 108px);
 }
 
 .post-header {
   display: grid;
-  gap: 18px;
-  padding-bottom: clamp(38px, 6vw, 68px);
+  grid-template-columns: 132px minmax(0, 1fr);
+  gap: 12px clamp(28px, 5vw, 64px);
+  padding-top: 24px;
+  padding-bottom: clamp(34px, 5vw, 54px);
+  border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--ink);
 }
 
 .back-link {
   width: fit-content;
   border-bottom: 1px solid var(--line);
+  grid-column: 1 / -1;
+  margin-bottom: clamp(22px, 4vw, 42px);
 }
 
 .post-kicker,
 .post-header time {
   margin: 0;
+  align-self: baseline;
+}
+
+.post-kicker {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.post-header time {
+  grid-column: 1;
+  grid-row: 3;
 }
 
 .post-header h1 {
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  max-width: 740px;
   margin: 0;
   font-family: "Noto Sans KR", system-ui, sans-serif;
-  font-size: clamp(42px, 7vw, 88px);
+  font-size: clamp(42px, 5.8vw, 70px);
   font-weight: 700;
-  line-height: 1.08;
+  line-height: 1.13;
+  letter-spacing: 0;
+  word-break: keep-all;
 }
 
 .post-summary {
-  max-width: 680px;
+  grid-column: 2;
+  grid-row: 4;
+  max-width: 700px;
   margin: 0;
   color: var(--soft);
   font-family: "Noto Sans KR", system-ui, sans-serif;
-  font-size: clamp(18px, 2.2vw, 24px);
+  font-size: clamp(18px, 2vw, 22px);
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.75;
+  word-break: keep-all;
 }
 
 .post-body {
-  padding-top: clamp(34px, 6vw, 70px);
+  max-width: 720px;
+  margin-left: calc(132px + clamp(28px, 5vw, 64px));
+  padding-top: clamp(34px, 5vw, 58px);
   font-family: "Noto Sans KR", system-ui, sans-serif;
-  font-size: clamp(17px, 1.8vw, 20px);
+  font-size: clamp(17px, 1.5vw, 19px);
   font-weight: 400;
-  line-height: 1.9;
+  line-height: 1.92;
+  word-break: keep-all;
 }
 
 .post-body blockquote {
@@ -323,17 +350,19 @@ main {
 }
 
 .concept-figure {
-  margin: clamp(34px, 6vw, 64px) 0;
-  padding: clamp(18px, 4vw, 30px);
-  border: 1px solid var(--ink);
+  margin: clamp(34px, 6vw, 58px) 0;
+  padding: clamp(18px, 4vw, 28px);
+  border: 1px solid var(--line);
+  background: var(--wash);
 }
 
 .concept-figure figcaption {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   color: var(--quiet);
   font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .open-loop {
@@ -344,7 +373,7 @@ main {
 }
 
 .shape {
-  min-height: 72px;
+  min-height: 64px;
   display: grid;
   place-items: center;
   border: 1px solid var(--ink);
@@ -362,12 +391,12 @@ main {
 }
 
 .shape.muted {
-  background: var(--wash);
+  background: var(--paper);
 }
 
 .loop-diagram {
   position: relative;
-  width: min(100%, 480px);
+  width: min(100%, 380px);
   aspect-ratio: 1;
   margin: 0 auto;
   border: 1px solid var(--line);
@@ -397,13 +426,13 @@ main {
   position: absolute;
   display: grid;
   place-items: center;
-  min-width: 82px;
-  min-height: 48px;
+  min-width: 74px;
+  min-height: 44px;
   padding: 8px 12px;
   background: var(--paper);
   border: 1px solid var(--ink);
   font-family: "Noto Sans KR", system-ui, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -434,8 +463,8 @@ main {
 .loop-core {
   top: 50%;
   left: 50%;
-  min-width: 112px;
-  min-height: 58px;
+  min-width: 104px;
+  min-height: 54px;
   transform: translate(-50%, -50%);
   background: var(--ink);
   color: var(--paper);
@@ -448,7 +477,7 @@ main {
 }
 
 .layer-stack div {
-  padding: 18px 20px;
+  padding: 16px 18px;
   border: 1px solid var(--ink);
   font-family: "Noto Sans KR", system-ui, sans-serif;
   font-size: 16px;
@@ -456,7 +485,7 @@ main {
 }
 
 .layer-stack div:nth-child(even) {
-  background: var(--wash);
+  background: var(--paper);
 }
 
 @media (max-width: 760px) {
@@ -500,6 +529,23 @@ main {
     flex-direction: column;
   }
 
+  .post-header {
+    grid-template-columns: 1fr;
+  }
+
+  .post-header h1,
+  .post-summary,
+  .post-kicker,
+  .post-header time {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .post-body {
+    max-width: none;
+    margin-left: 0;
+  }
+
   .open-loop {
     grid-template-columns: 1fr;
   }
@@ -509,7 +555,7 @@ main {
   }
 
   .loop-diagram {
-    width: min(100%, 360px);
+    width: min(100%, 340px);
   }
 }
 
