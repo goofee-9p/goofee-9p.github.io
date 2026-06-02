@@ -67,6 +67,7 @@ spacing:
   xl: 64px
   xxl: 112px
   measure: 680px
+  home-shell: 840px
   shell: 1120px
 rounded:
   none: 0px
@@ -142,7 +143,9 @@ small labels — the classic editorial contrast.
 
 A single, calm reading column.
 
-- **Shell (max 1120px):** Masthead, footer, and wide index lists.
+- **Shell (max 1120px):** Masthead, footer, and wide interior lists.
+- **Home Shell (max 840px):** Home latest entry, Contents index, and quiet About / Work
+  strip. This keeps the writing from feeling pinned to the left edge on wide screens.
 - **Measure (max 680px):** All long-form reading and prose.
 - A strict **8px spacing scale** sets the rhythm; sections breathe with `xl`–`xxl`
   vertical space. The home is **content-first**: the latest entry is the largest object on
