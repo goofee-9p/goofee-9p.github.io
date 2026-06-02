@@ -376,6 +376,11 @@ main {
   gap: 10px;
 }
 
+.abstraction-flow,
+.ax-shift {
+  grid-template-columns: minmax(0, 1fr) 32px minmax(0, 1fr) 32px minmax(0, 1fr);
+}
+
 .shape {
   min-height: 64px;
   display: grid;
@@ -402,6 +407,7 @@ main {
 
 .shape.muted {
   border-color: var(--diagram-muted-stroke);
+  color: var(--soft);
 }
 
 .loop-diagram {
@@ -487,6 +493,7 @@ main {
   gap: 0;
   border-top: 1px solid var(--diagram-stroke);
   border-left: 1px solid var(--diagram-stroke);
+  background: var(--diagram-node);
 }
 
 .layer-stack div {
@@ -501,6 +508,11 @@ main {
 
 .layer-stack div:nth-child(even) {
   background: var(--paper);
+}
+
+.ax-stack div:last-child,
+.layer-stack div:last-child {
+  font-weight: 800;
 }
 
 @media (max-width: 760px) {
@@ -562,6 +574,11 @@ main {
   }
 
   .open-loop {
+    grid-template-columns: 1fr;
+  }
+
+  .abstraction-flow,
+  .ax-shift {
     grid-template-columns: 1fr;
   }
 

@@ -47,6 +47,16 @@ components:
     textColor: "{colors.primary}"
     rounded: "{rounded.none}"
     padding: "{spacing.sm}"
+  diagram-flow:
+    backgroundColor: "{colors.surfaceSoft}"
+    textColor: "{colors.primary}"
+    rounded: "{rounded.none}"
+    padding: "{spacing.md}"
+  diagram-stack:
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.primary}"
+    rounded: "{rounded.none}"
+    padding: "{spacing.md}"
 ---
 
 ## Overview
@@ -100,6 +110,14 @@ Use for explanatory diagrams inside posts. It should have a light gray surface, 
 ### Diagram Node
 
 Use for labels inside diagrams. Nodes should be rectangular, high-contrast, and legible at mobile widths.
+
+### Diagram Flow
+
+Use for left-to-right conceptual movement, such as "prompt -> agent -> goal" or "chatbot -> dashboard -> operating system." Flow diagrams should use three to five nodes at most. On mobile, stack the nodes vertically and rotate arrows downward.
+
+### Diagram Stack
+
+Use for layered systems, data pipelines, or operating environments. The last layer may be slightly stronger in weight when it represents the resulting judgment or next action.
 
 ## Do's and Don'ts
 
