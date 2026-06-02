@@ -5,6 +5,10 @@
   --quiet: #8a8a8a;
   --line: #dcdcdc;
   --wash: #f6f6f6;
+  --diagram-surface: var(--wash);
+  --diagram-node: var(--paper);
+  --diagram-stroke: var(--ink);
+  --diagram-muted-stroke: var(--line);
 }
 
 * {
@@ -351,9 +355,9 @@ main {
 
 .concept-figure {
   margin: clamp(34px, 6vw, 58px) 0;
-  padding: clamp(18px, 4vw, 28px);
-  border: 1px solid var(--line);
-  background: var(--wash);
+  padding: clamp(20px, 4vw, 32px);
+  border: 1px solid var(--diagram-muted-stroke);
+  background: var(--diagram-surface);
 }
 
 .concept-figure figcaption {
@@ -369,29 +373,35 @@ main {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .shape {
   min-height: 64px;
   display: grid;
   place-items: center;
-  border: 1px solid var(--ink);
+  padding: 12px;
+  border: 1px solid var(--diagram-stroke);
+  background: var(--diagram-node);
   font-family: "Noto Sans KR", system-ui, sans-serif;
   font-size: 15px;
   font-weight: 700;
+  line-height: 1.45;
   text-align: center;
+  word-break: keep-all;
 }
 
 .shape.arrow {
   min-height: auto;
+  padding: 0;
   border: 0;
+  background: transparent;
   font-family: "Inter", system-ui, sans-serif;
   font-size: 24px;
 }
 
 .shape.muted {
-  background: var(--paper);
+  border-color: var(--diagram-muted-stroke);
 }
 
 .loop-diagram {
@@ -399,8 +409,9 @@ main {
   width: min(100%, 380px);
   aspect-ratio: 1;
   margin: 0 auto;
-  border: 1px solid var(--line);
+  border: 1px solid var(--diagram-muted-stroke);
   border-radius: 50%;
+  background: var(--paper);
 }
 
 .loop-diagram::before,
@@ -408,7 +419,7 @@ main {
   content: "";
   position: absolute;
   inset: 22%;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--diagram-stroke);
   border-radius: 50%;
 }
 
@@ -429,8 +440,8 @@ main {
   min-width: 74px;
   min-height: 44px;
   padding: 8px 12px;
-  background: var(--paper);
-  border: 1px solid var(--ink);
+  background: var(--diagram-node);
+  border: 1px solid var(--diagram-stroke);
   font-family: "Noto Sans KR", system-ui, sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -466,19 +477,23 @@ main {
   min-width: 104px;
   min-height: 54px;
   transform: translate(-50%, -50%);
-  background: var(--ink);
+  background: var(--diagram-stroke);
   color: var(--paper);
   font-family: "Inter", "Noto Sans KR", system-ui, sans-serif;
 }
 
 .layer-stack {
   display: grid;
-  gap: 8px;
+  gap: 0;
+  border-top: 1px solid var(--diagram-stroke);
+  border-left: 1px solid var(--diagram-stroke);
 }
 
 .layer-stack div {
   padding: 16px 18px;
-  border: 1px solid var(--ink);
+  border-right: 1px solid var(--diagram-stroke);
+  border-bottom: 1px solid var(--diagram-stroke);
+  background: var(--diagram-node);
   font-family: "Noto Sans KR", system-ui, sans-serif;
   font-size: 16px;
   font-weight: 700;
