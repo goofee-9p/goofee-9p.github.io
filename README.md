@@ -1,16 +1,42 @@
-# Static Portfolio Website
+# goofee-9p — Letters
 
-GitHub Pages로 배포할 수 있는 정적 포트폴리오 웹사이트입니다.
+개인 레터이자 포트폴리오 공간. GitHub Pages로 배포되는 정적 사이트입니다.
+오래 남는 생각을 편지(Letter)처럼 적어 모으고, 선별한 작업(Work)을 함께 둡니다.
 
-## 수정할 곳
+## 디자인
 
-- `index.html`: 이름, 소개글, 프로젝트, 이메일, 링크
-- `styles.css`: 색상, 타이포그래피, 반응형 레이아웃
+디자인 시스템은 [`DESIGN.md`](DESIGN.md)에 정의되어 있습니다 (Google Labs의
+DESIGN.md 포맷). 한 줄 요약: **에디토리얼 레터** — 세리프 타이포, 넉넉한 여백,
+헤어라인, 따뜻한 모노크롬 + 절제된 테라코타 액센트. 색·타이포·간격 토큰은 모두
+`DESIGN.md`의 YAML front matter가 기준이며, `style.css`가 이를 CSS 변수로 구현합니다.
+
+## 구조
+
+```
+index.html              홈 (최신 레터 중심)
+style.css               전체 스타일 (디자인 토큰 → CSS 변수)
+DESIGN.md               디자인 시스템 원본(source of truth)
+pages/
+  letters.html          레터 아카이브
+  work.html             포트폴리오 (항목은 placeholder — 실제 내용으로 교체)
+  about.html            소개
+  questions.html        답을 비워 둔 질문들
+  contact.html          연락처
+posts/
+  ax-dashboard-to-operating-system.html   Letter 003
+  closed-loop-ai-native.html              Letter 002
+  prompt-agent-thinking.html              Letter 001
+```
+
+## 콘텐츠 추가
+
+- **새 레터:** `posts/`에 글 HTML을 추가하고, `pages/letters.html`과 (최신 글이면)
+  `index.html`의 목록에 한 줄 추가합니다. 글 번호는 `Letter 00N` 형식.
+- **작업:** `pages/work.html`의 `.work-item` 블록을 복제해 채웁니다 (파일 상단 주석 참고).
+- **디자인 변경:** 색/타이포/간격은 `DESIGN.md`에서 정한 뒤 `style.css`의 `:root`
+  변수에 반영합니다.
 
 ## 배포
 
-1. GitHub 저장소에 이 파일들을 push합니다.
-2. GitHub 저장소의 `Settings > Pages`에서 배포 소스를 선택합니다.
-3. `Deploy from a branch`를 사용한다면 `master` 또는 `main` 브랜치의 `/root`를 선택합니다.
-
-사용자 페이지 저장소라면 저장소 이름은 보통 `<github-id>.github.io` 형식입니다.
+GitHub 저장소 `Settings > Pages`에서 `Deploy from a branch` → `main` 브랜치 `/root`.
+사용자 페이지 저장소이므로 도메인은 `goofee-9p.github.io` 입니다.
