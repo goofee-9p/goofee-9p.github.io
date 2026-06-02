@@ -188,24 +188,33 @@ img {
 .lede {
   width: var(--shell);
   margin: 0 auto;
-  padding: clamp(64px, 11vw, 132px) 0 clamp(44px, 7vw, 78px);
+  min-height: calc(100svh - 99px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.58fr);
+  align-items: end;
+  gap: clamp(36px, 7vw, 96px);
+  padding: clamp(64px, 9vw, 118px) 0 clamp(48px, 7vw, 82px);
 }
 .lede .eyebrow {
   display: block;
 }
+.lede-title {
+  max-width: 760px;
+}
 .lede h1 {
   margin: 22px 0 26px;
-  max-width: 16ch;
+  max-width: 12.5ch;
   font-family: var(--serif);
-  font-size: clamp(46px, 8vw, 86px);
+  font-size: clamp(48px, 7vw, 78px);
   font-weight: 500;
-  line-height: 1.02;
+  line-height: 1.04;
   letter-spacing: -0.022em;
   word-break: keep-all;
 }
 .lede .standfirst {
-  max-width: 36ch;
+  max-width: 34ch;
   margin: 0;
+  padding-bottom: 8px;
   color: var(--ink-soft);
   font-family: var(--serif-ko);
   font-size: clamp(18px, 2.2vw, 21px);
@@ -972,6 +981,19 @@ img {
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
+  }
+  .lede {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 64px;
+  }
+  .lede h1 {
+    max-width: 12ch;
+  }
+  .lede .standfirst {
+    max-width: 34ch;
+    padding-bottom: 0;
   }
   .about-strip {
     grid-template-columns: 1fr;
