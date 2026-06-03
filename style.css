@@ -24,7 +24,7 @@
 
   /* Layout */
   --shell: min(100% - 48px, 1120px);
-  --home-shell: min(100% - 48px, 840px);
+  --home-shell: min(100% - 48px, 760px);
   --measure: 680px;
 }
 
@@ -211,6 +211,8 @@ img {
   gap: 18px;
 }
 .featured .kicker {
+  width: min(100%, var(--measure));
+  margin-inline: auto;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -227,7 +229,7 @@ img {
   color: var(--line-strong);
 }
 .featured h2 {
-  margin: 0;
+  margin: 0 auto;
   max-width: 18ch;
   font-family: var(--serif);
   font-size: clamp(34px, 5.4vw, 60px);
@@ -243,8 +245,9 @@ img {
   color: var(--accent-deep);
 }
 .featured .dek {
+  width: min(100%, var(--measure));
   max-width: 52ch;
-  margin: 6px 0 4px;
+  margin: 6px auto 4px;
   color: var(--ink-soft);
   font-family: var(--serif);
   font-style: italic;
@@ -256,6 +259,10 @@ img {
   font-family: var(--serif-ko);
   font-style: normal;
 }
+.featured > .read-link {
+  width: min(100%, var(--measure));
+  margin-inline: auto;
+}
 
 /* Archive / letter index */
 .letter-index {
@@ -265,8 +272,8 @@ img {
 }
 .letter-row {
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr) 132px;
-  gap: 8px 28px;
+  grid-template-columns: 64px minmax(0, 1fr) 112px;
+  gap: 8px 24px;
   align-items: baseline;
   padding: clamp(22px, 3vw, 30px) 16px;
   margin: 0 -16px;
