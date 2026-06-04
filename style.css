@@ -26,7 +26,7 @@
   --shell: min(100% - 48px, 1120px);
   --home-shell: min(100% - 48px, 760px);
   --measure: 680px;
-  --subpage-inset: clamp(72px, 10vw, 188px);
+  --subpage-inset: clamp(0px, calc((100vw - var(--measure) - 48px) / 2), 220px);
 }
 
 *,
