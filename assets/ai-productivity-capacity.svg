@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">AI 생산성과 업무 총량</title>
+  <desc id="desc">AI로 생산성 기준선이 올라가고 한 사람이 감당할 수 있는 업무 총량이 확장되는 모노톤 도식.</desc>
+  <rect width="1200" height="720" fill="#fbfaf8"/>
+  <g fill="none" stroke="#1a1714" stroke-width="3">
+    <rect x="120" y="116" width="960" height="488"/>
+    <line x1="120" y1="470" x2="1080" y2="470"/>
+    <line x1="290" y1="116" x2="290" y2="604"/>
+    <line x1="548" y1="116" x2="548" y2="604"/>
+    <line x1="806" y1="116" x2="806" y2="604"/>
+  </g>
+  <g fill="#1a1714" font-family="'Noto Serif KR', 'Noto Sans KR', Arial, sans-serif" font-size="25" font-weight="700">
+    <text x="120" y="78">생산성 기준선</text>
+    <text x="163" y="542">이전</text>
+    <text x="403" y="542">AI 활용</text>
+    <text x="661" y="542">재설계</text>
+    <text x="913" y="542">업무 총량</text>
+  </g>
+  <g fill="#1a1714">
+    <rect x="166" y="374" width="76" height="96"/>
+    <rect x="424" y="304" width="76" height="166"/>
+    <rect x="682" y="236" width="76" height="234"/>
+    <rect x="940" y="172" width="76" height="298"/>
+  </g>
+  <g fill="none" stroke="#1a1714" stroke-width="3">
+    <path d="M190 336 C290 314 360 276 452 246 C568 208 641 183 727 148 C813 113 905 94 990 82"/>
+    <path d="M957 72 L990 82 L968 110"/>
+    <circle cx="452" cy="246" r="7" fill="#fbfaf8"/>
+    <circle cx="727" cy="148" r="7" fill="#fbfaf8"/>
+  </g>
+  <g fill="#57534c" font-family="'Noto Serif KR', 'Noto Sans KR', Arial, sans-serif" font-size="18" font-weight="600">
+    <text x="150" y="638">반복 처리 시간은 줄어들고</text>
+    <text x="642" y="638">시스템으로 더 큰 일을 감당한다</text>
+  </g>
+</svg>

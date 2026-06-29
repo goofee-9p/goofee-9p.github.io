@@ -741,6 +741,20 @@ img {
   color: var(--ink-quiet);
   line-height: 1.5;
 }
+.image-figure {
+  margin-top: clamp(46px, 7vw, 82px);
+}
+.image-figure figcaption {
+  margin: 14px 0 0;
+  padding: 12px 0 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 0;
+}
+.mono-image {
+  width: 100%;
+  border: 1px solid var(--line-strong);
+  background: var(--paper);
+}
 
 /* Horizontal flow */
 .open-loop {
